@@ -34,7 +34,6 @@ public class VIACL_Client {
             long timeStart = System.currentTimeMillis();
             HttpURLConnection con = (HttpURLConnection) new URL(proxy_address + "/greeting?name=" + cars[(int) (Math.random() * cars.length)]).openConnection();
             con.setRequestMethod("GET");
-            long timeEnd = System.currentTimeMillis();
             StringBuilder response;
             try (BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()))) {
                 String inputLine;
@@ -42,7 +41,10 @@ public class VIACL_Client {
                 while ((inputLine = in.readLine()) != null) {
                     response.append(inputLine);
                 }
+            } catch (Exception ex) {
+                System.out.println("Chyba při čtení dat :/");
             }
+            long timeEnd = System.currentTimeMillis();
             System.out.println((timeEnd - timeStart) + "\t-" + response.toString());
         } catch (IOException e) {
             System.out.println("Čas na připojení k serveru vypršel :/");
