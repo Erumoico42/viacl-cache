@@ -9,8 +9,8 @@ import java.net.URL;
 public class VIACL_Client {
 
     public static String proxy_address = "http://localhost:8080";
-    //public static String[] cars = {"Alfa Romeo", "Audi", "BMW", "Chevrolet", "Citroën", "Dacia", "DS", "Ferrari", "Fiat", "Ford", "Honda", "Hyundai", "Jaguar", "Jeep", "Kia", "Lada", "Lamborghini", "Lancia", "Land Rover", "Lexus", "Mazda", "Mercedes-Benz", "Mini", "Mitsubishi", "Nissan", "Opel", "Peugeot", "Porsche", "Renault", "Seat", "Škoda", "Subaru", "Suzuki", "Toyota", "Volkswagen", "Volvo"};   
-    public static String[] cars = {"Alfa Romeo", "Audi", "BMW", "Chevrolet", "Citroën", "Dacia"};
+    public static String[] cars = {"Alfa Romeo", "Audi", "BMW", "Chevrolet", "Citroën", "Dacia", "DS", "Ferrari", "Fiat", "Ford", "Honda", "Hyundai", "Jaguar", "Jeep", "Kia", "Lada", "Lamborghini", "Lancia", "Land Rover", "Lexus", "Mazda", "Mercedes-Benz", "Mini", "Mitsubishi", "Nissan", "Opel", "Peugeot", "Porsche", "Renault", "Seat", "Škoda", "Subaru", "Suzuki", "Toyota", "Volkswagen", "Volvo"};
+    //public static String[] cars = {"Alfa Romeo", "Audi", "BMW", "Chevrolet", "Citroën", "Dacia"};
 
     public static void main(String[] args) {
         for (int i = 0; i < 1000; i++) {
